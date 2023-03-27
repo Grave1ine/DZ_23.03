@@ -35,10 +35,12 @@ public class Task {
 
         System.out.println("############################################################");
 
-        phoneOne.sendMessages("89562487595");
+        String[] arr = {"82965832198", "86351287456", "95231478595"};
 
-        phoneTwo.sendMessages("75623587962");
+        phoneOne.sendMessages(arr);
 
-        phoneThree.sendMessages("45623589621");
+        phoneTwo.sendMessages(arr);
+
+        phoneThree.sendMessages(arr);
     }
 }

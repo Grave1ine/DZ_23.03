@@ -1,5 +1,10 @@
 public class Phone {
 
+    String number;
+    String model;
+    int weight;
+    String name;
+
     Phone(){};
 
     Phone(String number, String model){
@@ -10,6 +15,7 @@ public class Phone {
         this.number = number;
         this.model = model;
         this.weight = weight;
+
     };
 
     void receiveCall(){
@@ -25,14 +31,12 @@ public class Phone {
         System.out.printf("Звонит: %s %s\n", name , number);
     }
 
-    void sendMessages(String number){
-        System.out.printf("На нмоер: %s было отправлено сообщение с номера: %s\n",this.number, number);
+    void sendMessages(String[] arr){
+        for(int i = 0; i < arr.length; i++){
+            System.out.printf("На номер %s было отправлено сообщение с номера %s\n", arr[i], this.number);
+        }
+        System.out.println("############################################################");
     }
-
-    String number;
-    String model;
-    int weight;
-    String name;
 
 
 }
